@@ -6,8 +6,6 @@
       <VmLoginModal></VmLoginModal>
       <VmRegistrationModal></VmRegistrationModal>
       <VmCheckoutModal></VmCheckoutModal>
-  
-     
     </main>
     <VmFooter></VmFooter>
   </div>
@@ -22,28 +20,24 @@ import VmCheckoutModal from "@/components/modal/Checkout";
 
 export default {
   data() {
-    return {
-    
-    }
+    return {};
   },
   components: {
     VmHeader,
     VmFooter,
     VmLoginModal,
     VmRegistrationModal,
-    VmCheckoutModal
+    VmCheckoutModal,
   },
   methods: {
     // ...mapActions(['fetchlistproduct'])
     fetchListProduct() {
-      this.$store.dispatch('fetchlistproduct')
-    }
-
+      this.$store.dispatch("fetchlistproduct");
+    },
   },
-  beforeMount() {
-    this.fetchListProduct()
-  },
-
+  // beforeMount() {
+  //   this.fetchListProduct()
+  // },
 };
 </script>
 
